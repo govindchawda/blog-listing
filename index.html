@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog listing</title>
+
+    <!-- link google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Banner section Start -->
+    <section class="banner">
+        <div class="banner_section">
+            <div class="container">
+                <div class="banner-data">
+                    <div class="banner_content">
+                        <img src="assets/medias/Subtract (1).png" alt="">
+                        <!-- <img src="assets/medias/Subtract (1).png" alt=""> -->
+                    </div>
+                    <div class="banner-tittle">
+                        <h1>All Blogs</h1>
+                        <p>All common infosec questions, answered in one place – just for you. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- Productssection start -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="products_tittle">
+                <h1>Learn from the latest blogs by our community</h1>
+            </div>
+            <div class="products_optionBar tittle-padding">
+                <ul class="products_rightBar">
+                    <li><a href="javascript:void(0)" id="all" onclick="GetData()">All</a></li>
+                    <li><a href="javascript:void(0)" id="electronics" onclick="GetData('electronics')">electronics</a>
+                    </li>
+                    <li><a href="javascript:void(0)" id="jewelery" onclick="GetData('jewelery')">jewelery</a></li>
+                    <li><a href="javascript:void(0)" id="mens clothing" onclick="GetData('mens clothing')">men's
+                            clothing</a></li>
+                    <li><a href="javascript:void(0)" id="womens clothing" onclick="GetData('womens clothing')">women's
+                            clothing</a></li>
+                </ul>
+                <div class="products_leftBar">
+                    <input type="search" name="" id="" onkeyup="searchProducts(this.value)" placeholder="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!-- products section start -->
+            <div class="products_mainbox" id="products">
+
+            </div>
+            <!-- products section end -->
+
+            <!-- pagination section start -->
+            <div class="pagination tittle-padding" id="pagination">
+
+            </div>
+            <!-- pagination section end -->
+        </div>
+    </section>
+    <!-- Productssection end -->
+
+    <script src="/script.js"></script>
+</body>
+</html>
