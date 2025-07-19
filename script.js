@@ -28,7 +28,7 @@ init();
 
 function GetData(value, opts = {}) {
   try {
-    fetch('data.json').then((res) => res.json()).then((data) => {
+   fetch('./data.json?' + new Date().getTime()).then((res) => res.json()).then((data) => {
 
       Deafult_page = 1;
       all_data = data;
